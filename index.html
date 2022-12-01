@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/yuna.css" />
+        <link rel="stylesheet" href="css/vegas.min.css">
+        <link rel="stylesheet" href="css/jquery.bxslider.min.css">
+        <!-- font-awesome.css 추가 -->
+		<link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+		<script src="javascript/jquery-1.12.3.js"></script>
+		<script src="javascript/yuna.js" defer type="text/javascript"></script>
+        <script src="javascript/vegas.min.js"></script>
+        <script src="javascript/jquery.cookie.js"></script>
+        <script src="javascript/jquery.bxslider.min.js"></script>
+
+		<title>twinkle</title>
+	</head>
+	<body>
+        <!-- 쿠키 관련 팝업창 영역 -->
+		<div id="notice_wrap">
+			<img src="images/moon.jpg" alt="월식 이미지" width="400px" height="300px" />
+			<span class="moontext">올해 월식정보 확인 공지사항 안내</span>
+            
+			<p class="closewrap">
+				<input type="checkbox" name="expiresChk" id="expiresChk" />
+				<label for="expiresChk">3일 동안 이 창 열지 않기</label>
+				<button class="closeBtn">닫기</button>
+			</p>
+		</div>
+
+       
+
+		<!-- heager 영역 -->
+		<header>
+			<div class="top">
+				<div class="logo">
+					<a href="#"><img src="images/logo.PNG" alt="logo" /></a>
+				</div>
+				<nav class="menu">
+					<ul class="navi">
+						<li>
+							<a href="#">회사소개</a>
+							<ul class="submenu">
+								<li><a href="#">인사말</a></li>
+								<li><a href="#">회사소개</a></li>
+								<li><a href="#">오시는길</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">별자리 정보</a>
+							<ul class="submenu">
+								<li><a href="#">별자리상식</a></li>
+								<li><a href="#">북반구별자리</a></li>
+								<li><a href="#">이달의별자리</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">커뮤니티</a>
+							<ul class="submenu">
+								<li><a href="#">문의게시판</a></li>
+								<li><a href="#">자유게시판</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<div class="bodywrap">
+			<div class="imgslide">
+				<a href="#">
+					
+					<span class="imgtext1">은하수 타임랩스</span>
+				</a>
+				<a href="#">
+				
+					<span class="imgtext2">월식 타임랩스</span>
+				</a>
+				<a href="#">
+				
+					<span class="imgtext3">별똥별 타임랩스</span>
+				</a>
+			</div>
+			
+		<!-- 레이어 팝업창 영역 -->
+		<div id="layer">
+			<div class="layer_up">
+				<div class="uptitle">twinkle 공지사항</div>
+				<div class="upbody">
+					코로나로 인하여, 현재 오프라인 매장내로 방문이 불가합니다.
+                    양해부탁드립니다
+                
+				</div>
+				<div class="btn">닫기</div>
+			</div>
+		</div>
+
+  
+		<footer>
+			<div class="btlogo">
+				<a href="#"><img src="images/ft_logo.PNG" alt="하단로고" /></a>
+			</div>
+			<div class="site">
+				<div class="btmenu">
+					<ul>
+						<li><a href="#"><i class="fas fa-paste"></i> 공지사항</a></li>
+						<li><a href="#"><i class="fas fa-calendar"></i> 이벤트</a></li>
+						<li><a href="yn_tubular.html" id="tubular">
+ 
+ 
+                            <i class="fab fa-youtube"></i> 영상</a></li>
+					</ul>
+				</div>
+				<div class="copy">
+					COPYRIGHT &#169; by WEBDESIGN. ALL RIGHTS RESERVED
+				</div>
+			</div>
+		</footer>
+        <script>
+			  $(document).ready(function() {
+            $('.imgslide').vegas({
+            slides: [
+                {  
+            video: {
+                //src 속성을 사용해 동영상 지정해줌
+                src: [
+                    'vegas.mp4' ],
+                //loop 속성을 사용해 동영상 반복 여부 지정함
+                loop: true,
+                //동영상 무음상태(음소거 상태)로 만들어줌
+                mute: true
+            }
+        }
+    ]
+
+        });
+    });
+
+		
+		</script>
+	</body>
+</html>
